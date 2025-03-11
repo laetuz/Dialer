@@ -1,4 +1,4 @@
-package com.simplemobiletools.dialer.activities
+package com.simplemobiletools.dialer.presentation.activities
 
 import android.annotation.TargetApi
 import android.content.Intent
@@ -40,7 +40,9 @@ class SettingsActivity : SimpleActivity() {
         }
     }
 
-    private val saveDocument = registerForActivityResult(ActivityResultContracts.CreateDocument(CALL_HISTORY_FILE_TYPE)) { uri ->
+    private val saveDocument = registerForActivityResult(ActivityResultContracts.CreateDocument(
+        CALL_HISTORY_FILE_TYPE
+    )) { uri ->
         if (uri != null) {
             toast(R.string.exporting)
             RecentsHelper(this).getRecentCalls(false, Int.MAX_VALUE) { recents ->

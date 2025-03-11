@@ -1,9 +1,9 @@
-package com.simplemobiletools.dialer.activities
+package com.simplemobiletools.dialer.presentation.activities
 
 import android.os.Bundle
 import com.simplemobiletools.commons.extensions.viewBinding
 import com.simplemobiletools.commons.helpers.NavigationIcon
-import com.simplemobiletools.dialer.adapters.ConferenceCallsAdapter
+import com.simplemobiletools.dialer.presentation.adapters.ConferenceCallsAdapter
 import com.simplemobiletools.dialer.databinding.ActivityConferenceBinding
 import com.simplemobiletools.dialer.helpers.CallManager
 

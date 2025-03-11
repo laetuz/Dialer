@@ -1,4 +1,4 @@
-package com.simplemobiletools.dialer.adapters
+package com.simplemobiletools.dialer.presentation.adapters
 
 import android.view.View
 import android.view.ViewGroup
@@ -7,9 +7,9 @@ import com.simplemobiletools.commons.helpers.TAB_CALL_HISTORY
 import com.simplemobiletools.commons.helpers.TAB_CONTACTS
 import com.simplemobiletools.commons.helpers.TAB_FAVORITES
 import com.simplemobiletools.dialer.R
-import com.simplemobiletools.dialer.activities.SimpleActivity
+import com.simplemobiletools.dialer.presentation.activities.SimpleActivity
 import com.simplemobiletools.dialer.extensions.config
-import com.simplemobiletools.dialer.fragments.MyViewPagerFragment
+import com.simplemobiletools.dialer.presentation.fragments.MyViewPagerFragment
 import com.simplemobiletools.dialer.helpers.tabsList
 
 class ViewPagerAdapter(val activity: SimpleActivity) : PagerAdapter() {

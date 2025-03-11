@@ -1,4 +1,4 @@
-package com.simplemobiletools.dialer.activities
+package com.simplemobiletools.dialer.presentation.activities
 
 import android.annotation.SuppressLint
 import android.content.Intent

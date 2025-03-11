@@ -1,4 +1,4 @@
-package com.simplemobiletools.dialer.adapters
+package com.simplemobiletools.dialer.presentation.adapters
 
 import android.telecom.Call
 import android.view.Menu
@@ -10,7 +10,7 @@ import com.simplemobiletools.commons.helpers.LOWER_ALPHA
 import com.simplemobiletools.commons.helpers.SimpleContactsHelper
 import com.simplemobiletools.commons.views.MyRecyclerView
 import com.simplemobiletools.dialer.R
-import com.simplemobiletools.dialer.activities.SimpleActivity
+import com.simplemobiletools.dialer.presentation.activities.SimpleActivity
 import com.simplemobiletools.dialer.databinding.ItemConferenceCallBinding
 import com.simplemobiletools.dialer.extensions.hasCapability
 import com.simplemobiletools.dialer.helpers.getCallContact

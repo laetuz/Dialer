@@ -1,4 +1,4 @@
-package com.simplemobiletools.dialer.fragments
+package com.simplemobiletools.dialer.presentation.fragments
 
 import android.content.Context
 import android.util.AttributeSet
@@ -10,13 +10,14 @@ import com.simplemobiletools.commons.extensions.getTextSize
 import com.simplemobiletools.commons.helpers.SORT_BY_FIRST_NAME
 import com.simplemobiletools.commons.helpers.SORT_BY_SURNAME
 import com.simplemobiletools.commons.views.MyRecyclerView
-import com.simplemobiletools.dialer.activities.MainActivity
-import com.simplemobiletools.dialer.activities.SimpleActivity
-import com.simplemobiletools.dialer.adapters.ContactsAdapter
-import com.simplemobiletools.dialer.adapters.RecentCallsAdapter
+import com.simplemobiletools.dialer.presentation.activities.MainActivity
+import com.simplemobiletools.dialer.presentation.activities.SimpleActivity
+import com.simplemobiletools.dialer.presentation.adapters.ContactsAdapter
+import com.simplemobiletools.dialer.presentation.adapters.RecentCallsAdapter
 import com.simplemobiletools.dialer.databinding.FragmentLettersLayoutBinding
 import com.simplemobiletools.dialer.databinding.FragmentRecentsBinding
 import com.simplemobiletools.dialer.extensions.config
+import com.simplemobiletools.dialer.fragments.RecentsFragment
 import com.simplemobiletools.dialer.helpers.Config
 
 abstract class MyViewPagerFragment<BINDING : MyViewPagerFragment.InnerBinding>(context: Context, attributeSet: AttributeSet) :

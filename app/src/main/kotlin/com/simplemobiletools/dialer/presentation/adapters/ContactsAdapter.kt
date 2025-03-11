@@ -1,4 +1,4 @@
-package com.simplemobiletools.dialer.adapters
+package com.simplemobiletools.dialer.presentation.adapters
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -29,7 +29,7 @@ import com.simplemobiletools.commons.interfaces.StartReorderDragListener
 import com.simplemobiletools.commons.models.contacts.Contact
 import com.simplemobiletools.commons.views.MyRecyclerView
 import com.simplemobiletools.dialer.R
-import com.simplemobiletools.dialer.activities.SimpleActivity
+import com.simplemobiletools.dialer.presentation.activities.SimpleActivity
 import com.simplemobiletools.dialer.extensions.areMultipleSIMsAvailable
 import com.simplemobiletools.dialer.extensions.callContactWithSim
 import com.simplemobiletools.dialer.extensions.config
@@ -483,7 +483,8 @@ class ContactsAdapter(
         val dragHandleIcon: ImageView
     }
 
-    private class ItemContactGridBindingAdapter(val binding: ItemContactWithoutNumberGridBinding) : ItemViewBinding {
+    private class ItemContactGridBindingAdapter(val binding: ItemContactWithoutNumberGridBinding) :
+        ItemViewBinding {
         override val itemContactName = binding.itemContactName
         override val itemContactImage = binding.itemContactImage
         override val itemContactFrame = binding.itemContactFrame
@@ -492,7 +493,8 @@ class ContactsAdapter(
         override fun getRoot(): View = binding.root
     }
 
-    private class ItemContactBindingAdapter(val binding: ItemContactWithoutNumberBinding) : ItemViewBinding {
+    private class ItemContactBindingAdapter(val binding: ItemContactWithoutNumberBinding) :
+        ItemViewBinding {
         override val itemContactName = binding.itemContactName
         override val itemContactImage = binding.itemContactImage
         override val itemContactFrame = binding.itemContactFrame

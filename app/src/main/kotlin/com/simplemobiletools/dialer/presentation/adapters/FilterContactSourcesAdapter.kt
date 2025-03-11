@@ -1,4 +1,4 @@
-package com.simplemobiletools.dialer.adapters
+package com.simplemobiletools.dialer.presentation.adapters
 
 import android.view.View
 import android.view.ViewGroup
@@ -8,7 +8,7 @@ import com.simplemobiletools.commons.extensions.getProperPrimaryColor
 import com.simplemobiletools.commons.extensions.getProperTextColor
 import com.simplemobiletools.commons.helpers.SMT_PRIVATE
 import com.simplemobiletools.commons.models.contacts.ContactSource
-import com.simplemobiletools.dialer.activities.SimpleActivity
+import com.simplemobiletools.dialer.presentation.activities.SimpleActivity
 import com.simplemobiletools.dialer.databinding.ItemFilterContactSourceBinding
 
 class FilterContactSourcesAdapter(

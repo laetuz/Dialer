@@ -5,8 +5,8 @@ import com.simplemobiletools.commons.activities.BaseSimpleActivity
 import com.simplemobiletools.commons.extensions.getAlertDialogBuilder
 import com.simplemobiletools.commons.extensions.setupDialogStuff
 import com.simplemobiletools.commons.extensions.viewBinding
-import com.simplemobiletools.dialer.activities.SimpleActivity
-import com.simplemobiletools.dialer.adapters.RecentCallsAdapter
+import com.simplemobiletools.dialer.presentation.activities.SimpleActivity
+import com.simplemobiletools.dialer.presentation.adapters.RecentCallsAdapter
 import com.simplemobiletools.dialer.databinding.DialogShowGroupedCallsBinding
 import com.simplemobiletools.dialer.helpers.RecentsHelper
 import com.simplemobiletools.dialer.models.RecentCall

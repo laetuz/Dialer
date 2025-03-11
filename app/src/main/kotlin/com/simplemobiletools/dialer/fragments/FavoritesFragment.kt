@@ -12,13 +12,14 @@ import com.simplemobiletools.commons.models.contacts.Contact
 import com.simplemobiletools.commons.views.MyGridLayoutManager
 import com.simplemobiletools.commons.views.MyLinearLayoutManager
 import com.simplemobiletools.dialer.R
-import com.simplemobiletools.dialer.activities.SimpleActivity
-import com.simplemobiletools.dialer.adapters.ContactsAdapter
 import com.simplemobiletools.dialer.databinding.FragmentFavoritesBinding
 import com.simplemobiletools.dialer.databinding.FragmentLettersLayoutBinding
 import com.simplemobiletools.dialer.extensions.config
 import com.simplemobiletools.dialer.helpers.Converters
 import com.simplemobiletools.dialer.interfaces.RefreshItemsListener
+import com.simplemobiletools.dialer.presentation.activities.SimpleActivity
+import com.simplemobiletools.dialer.presentation.adapters.ContactsAdapter
+import com.simplemobiletools.dialer.presentation.fragments.MyViewPagerFragment
 import java.util.Locale
 
 class FavoritesFragment(context: Context, attributeSet: AttributeSet) : MyViewPagerFragment<MyViewPagerFragment.LettersInnerBinding>(context, attributeSet),

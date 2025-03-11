@@ -1,4 +1,4 @@
-package com.simplemobiletools.dialer.activities
+package com.simplemobiletools.dialer.presentation.activities
 
 import android.content.Intent
 import com.simplemobiletools.commons.activities.BaseSplashActivity

@@ -8,14 +8,15 @@ import com.simplemobiletools.commons.extensions.*
 import com.simplemobiletools.commons.helpers.*
 import com.simplemobiletools.commons.models.contacts.Contact
 import com.simplemobiletools.dialer.R
-import com.simplemobiletools.dialer.activities.MainActivity
-import com.simplemobiletools.dialer.activities.SimpleActivity
-import com.simplemobiletools.dialer.adapters.ContactsAdapter
 import com.simplemobiletools.dialer.databinding.FragmentContactsBinding
 import com.simplemobiletools.dialer.databinding.FragmentLettersLayoutBinding
 import com.simplemobiletools.dialer.extensions.launchCreateNewContactIntent
 import com.simplemobiletools.dialer.extensions.startContactDetailsIntent
 import com.simplemobiletools.dialer.interfaces.RefreshItemsListener
+import com.simplemobiletools.dialer.presentation.activities.MainActivity
+import com.simplemobiletools.dialer.presentation.activities.SimpleActivity
+import com.simplemobiletools.dialer.presentation.adapters.ContactsAdapter
+import com.simplemobiletools.dialer.presentation.fragments.MyViewPagerFragment
 import java.util.Locale
 
 class ContactsFragment(context: Context, attributeSet: AttributeSet) : MyViewPagerFragment<MyViewPagerFragment.LettersInnerBinding>(context, attributeSet),

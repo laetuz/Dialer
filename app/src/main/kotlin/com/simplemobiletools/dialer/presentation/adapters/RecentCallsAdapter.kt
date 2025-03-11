@@ -1,4 +1,4 @@
-package com.simplemobiletools.dialer.adapters
+package com.simplemobiletools.dialer.presentation.adapters
 
 import android.content.Intent
 import android.graphics.drawable.Drawable
@@ -17,8 +17,8 @@ import com.simplemobiletools.commons.helpers.*
 import com.simplemobiletools.commons.models.contacts.Contact
 import com.simplemobiletools.commons.views.MyRecyclerView
 import com.simplemobiletools.dialer.R
-import com.simplemobiletools.dialer.activities.MainActivity
-import com.simplemobiletools.dialer.activities.SimpleActivity
+import com.simplemobiletools.dialer.presentation.activities.MainActivity
+import com.simplemobiletools.dialer.presentation.activities.SimpleActivity
 import com.simplemobiletools.dialer.databinding.ItemRecentCallBinding
 import com.simplemobiletools.dialer.dialogs.ShowGroupedCallsDialog
 import com.simplemobiletools.dialer.extensions.*

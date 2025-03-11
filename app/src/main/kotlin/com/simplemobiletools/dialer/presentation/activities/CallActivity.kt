@@ -1,4 +1,4 @@
-package com.simplemobiletools.dialer.activities
+package com.simplemobiletools.dialer.presentation.activities
 
 import android.annotation.SuppressLint
 import android.app.KeyguardManager
@@ -79,7 +79,7 @@ class CallActivity : SimpleActivity() {
         updateCallContactInfo(CallManager.getPrimaryCall())
     }
 
-    override fun onNewIntent(intent: Intent?) {
+    override fun onNewIntent(intent: Intent) {
         super.onNewIntent(intent)
         updateState()
     }

@@ -10,8 +10,8 @@ import com.simplemobiletools.commons.extensions.*
 import com.simplemobiletools.commons.models.contacts.Contact
 import com.simplemobiletools.commons.views.MySearchMenu
 import com.simplemobiletools.dialer.R
-import com.simplemobiletools.dialer.activities.SimpleActivity
-import com.simplemobiletools.dialer.adapters.ContactsAdapter
+import com.simplemobiletools.dialer.presentation.activities.SimpleActivity
+import com.simplemobiletools.dialer.presentation.adapters.ContactsAdapter
 import com.simplemobiletools.dialer.databinding.DialogSelectContactBinding
 import java.util.Locale
 

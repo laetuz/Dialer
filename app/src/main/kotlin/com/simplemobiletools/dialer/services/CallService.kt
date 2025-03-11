@@ -5,7 +5,7 @@ import android.content.Context
 import android.telecom.Call
 import android.telecom.CallAudioState
 import android.telecom.InCallService
-import com.simplemobiletools.dialer.activities.CallActivity
+import com.simplemobiletools.dialer.presentation.activities.CallActivity
 import com.simplemobiletools.dialer.extensions.config
 import com.simplemobiletools.dialer.extensions.isOutgoing
 import com.simplemobiletools.dialer.extensions.powerManager

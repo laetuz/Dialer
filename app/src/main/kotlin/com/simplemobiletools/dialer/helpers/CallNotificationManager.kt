@@ -15,7 +15,7 @@ import com.simplemobiletools.commons.extensions.setText
 import com.simplemobiletools.commons.extensions.setVisibleIf
 import com.simplemobiletools.commons.helpers.isOreoPlus
 import com.simplemobiletools.dialer.R
-import com.simplemobiletools.dialer.activities.CallActivity
+import com.simplemobiletools.dialer.presentation.activities.CallActivity
 import com.simplemobiletools.dialer.extensions.powerManager
 import com.simplemobiletools.dialer.receivers.CallActionReceiver
 

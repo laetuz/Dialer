@@ -1,4 +1,4 @@
-package com.simplemobiletools.dialer.activities
+package com.simplemobiletools.dialer.presentation.activities
 
 import android.os.Bundle
 import com.google.gson.Gson
@@ -12,7 +12,7 @@ import com.simplemobiletools.commons.helpers.NavigationIcon
 import com.simplemobiletools.commons.models.PhoneNumber
 import com.simplemobiletools.commons.models.RadioItem
 import com.simplemobiletools.commons.models.contacts.Contact
-import com.simplemobiletools.dialer.adapters.SpeedDialAdapter
+import com.simplemobiletools.dialer.presentation.adapters.SpeedDialAdapter
 import com.simplemobiletools.dialer.databinding.ActivityManageSpeedDialBinding
 import com.simplemobiletools.dialer.dialogs.SelectContactDialog
 import com.simplemobiletools.dialer.extensions.config

@@ -1,4 +1,4 @@
-package com.simplemobiletools.dialer.activities
+package com.simplemobiletools.dialer.presentation.activities
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -14,6 +14,8 @@ import android.provider.Settings
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.activity.enableEdgeToEdge
+import androidx.core.view.updatePadding
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.snackbar.Snackbar
 import com.simplemobiletools.commons.dialogs.ChangeViewTypeDialog
@@ -27,7 +29,6 @@ import com.simplemobiletools.commons.models.RadioItem
 import com.simplemobiletools.commons.models.contacts.Contact
 import com.simplemobiletools.dialer.BuildConfig
 import com.simplemobiletools.dialer.R
-import com.simplemobiletools.dialer.adapters.ViewPagerAdapter
 import com.simplemobiletools.dialer.databinding.ActivityMainBinding
 import com.simplemobiletools.dialer.dialogs.ChangeSortingDialog
 import com.simplemobiletools.dialer.dialogs.FilterContactSourcesDialog
@@ -35,9 +36,12 @@ import com.simplemobiletools.dialer.extensions.config
 import com.simplemobiletools.dialer.extensions.launchCreateNewContactIntent
 import com.simplemobiletools.dialer.fragments.ContactsFragment
 import com.simplemobiletools.dialer.fragments.FavoritesFragment
-import com.simplemobiletools.dialer.fragments.MyViewPagerFragment
 import com.simplemobiletools.dialer.fragments.RecentsFragment
-import com.simplemobiletools.dialer.helpers.*
+import com.simplemobiletools.dialer.helpers.OPEN_DIAL_PAD_AT_LAUNCH
+import com.simplemobiletools.dialer.helpers.RecentsHelper
+import com.simplemobiletools.dialer.helpers.tabsList
+import com.simplemobiletools.dialer.presentation.adapters.ViewPagerAdapter
+import com.simplemobiletools.dialer.presentation.fragments.MyViewPagerFragment
 import me.grantland.widget.AutofitHelper
 
 class MainActivity : SimpleActivity() {
@@ -56,8 +60,11 @@ class MainActivity : SimpleActivity() {
         appLaunched(BuildConfig.APPLICATION_ID)
         setupOptionsMenu()
         refreshMenuItems()
+        enableEdgeToEdge()
+//        enableEdgeToEdgeSimple()
         updateMaterialActivityViews(binding.mainCoordinator, binding.mainHolder, useTransparentNavigation = false, useTopSearchMenu = true)
 
+//        binding.mainMenu.updatePadding(top = 32)
         launchedDialer = savedInstanceState?.getBoolean(OPEN_DIAL_PAD_AT_LAUNCH) ?: false
 
         if (isDefaultDialer()) {
@@ -190,6 +197,7 @@ class MainActivity : SimpleActivity() {
             getToolbar().inflateMenu(R.menu.menu)
             toggleHideOnScroll(false)
             setupMenu()
+            updatePadding(top = 80)
 
             onSearchClosedListener = {
                 getAllFragments().forEach {
@@ -298,6 +306,7 @@ class MainActivity : SimpleActivity() {
     private fun setupTabColors() {
         val activeView = binding.mainTabsHolder.getTabAt(binding.viewPager.currentItem)?.customView
         updateBottomTabItemColors(activeView, true, getSelectedTabDrawableIds()[binding.viewPager.currentItem])
+        activeView?.updatePadding(bottom = 64)
 
         getInactiveTabIndexes(binding.viewPager.currentItem).forEach { index ->
             val inactiveView = binding.mainTabsHolder.getTabAt(index)?.customView

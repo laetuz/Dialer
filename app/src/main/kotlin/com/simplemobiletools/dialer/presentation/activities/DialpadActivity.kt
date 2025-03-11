@@ -1,4 +1,4 @@
-package com.simplemobiletools.dialer.activities
+package com.simplemobiletools.dialer.presentation.activities
 
 import android.annotation.SuppressLint
 import android.annotation.TargetApi
@@ -25,7 +25,7 @@ import com.simplemobiletools.commons.extensions.*
 import com.simplemobiletools.commons.helpers.*
 import com.simplemobiletools.commons.models.contacts.Contact
 import com.simplemobiletools.dialer.R
-import com.simplemobiletools.dialer.adapters.ContactsAdapter
+import com.simplemobiletools.dialer.presentation.adapters.ContactsAdapter
 import com.simplemobiletools.dialer.databinding.ActivityDialpadBinding
 import com.simplemobiletools.dialer.extensions.*
 import com.simplemobiletools.dialer.helpers.DIALPAD_TONE_LENGTH_MS

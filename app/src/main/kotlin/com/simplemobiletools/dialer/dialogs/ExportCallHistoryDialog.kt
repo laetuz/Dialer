@@ -3,7 +3,7 @@ package com.simplemobiletools.dialer.dialogs
 import androidx.appcompat.app.AlertDialog
 import com.simplemobiletools.commons.extensions.*
 import com.simplemobiletools.dialer.R
-import com.simplemobiletools.dialer.activities.SimpleActivity
+import com.simplemobiletools.dialer.presentation.activities.SimpleActivity
 import com.simplemobiletools.dialer.databinding.DialogExportCallHistoryBinding
 
 class ExportCallHistoryDialog(val activity: SimpleActivity, callback: (filename: String) -> Unit) {

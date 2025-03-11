@@ -1,4 +1,4 @@
-package com.simplemobiletools.dialer.activities
+package com.simplemobiletools.dialer.presentation.activities
 
 import com.simplemobiletools.commons.activities.BaseSimpleActivity
 import com.simplemobiletools.dialer.R

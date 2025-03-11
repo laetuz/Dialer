@@ -8,8 +8,8 @@ import com.simplemobiletools.commons.helpers.SMT_PRIVATE
 import com.simplemobiletools.commons.models.contacts.Contact
 import com.simplemobiletools.commons.models.contacts.ContactSource
 import com.simplemobiletools.dialer.R
-import com.simplemobiletools.dialer.activities.SimpleActivity
-import com.simplemobiletools.dialer.adapters.FilterContactSourcesAdapter
+import com.simplemobiletools.dialer.presentation.activities.SimpleActivity
+import com.simplemobiletools.dialer.presentation.adapters.FilterContactSourcesAdapter
 import com.simplemobiletools.dialer.databinding.DialogFilterContactSourcesBinding
 import com.simplemobiletools.dialer.extensions.config
 
